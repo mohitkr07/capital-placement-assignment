@@ -1,0 +1,361 @@
+:root {
+  --defaultShadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+.side-panel {
+  width: 4.5rem;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: sticky;
+  top: 0;
+}
+.panel-options {
+  display: flex;
+  flex-direction: column;
+}
+.panel-options i {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.panel-options i:hover {
+  background-color: #e9efff;
+}
+
+.profile {
+  width: 2rem;
+  height: 2rem;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin: 1rem 0;
+  align-self: center;
+  cursor: pointer;
+}
+.profile-2 {
+  width: 2rem;
+  height: 2rem;
+  background-color: #e9efff;
+  color: #1d4ed8;
+  font-size: 80%;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 1rem 0 2rem 0;
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------view port--------------- */
+.view-port {
+  flex-grow: 1;
+  min-height: 100%;
+  background-color: #f9faff;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 6rem;
+  display: flex;
+}
+.top-left {
+  width: 28rem;
+  height: 100%;
+  padding: 1.5rem;
+}
+.top h3 {
+  color: #1d4ed8;
+  font-size: 130%;
+}
+.top-left p {
+  font-size: 80%;
+  margin-top: 10px;
+}
+.top-right {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  justify-content: space-between;
+}
+
+/* ------drop-down--------- */
+
+.dropbtn {
+  height: 2.5rem;
+  width: 20rem;
+  outline: none;
+  border: none;
+  color: #1d4ed8;
+  font-size: 90%;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: var(--defaultShadow);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 15px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 85%;
+  background-color: #fff;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 18px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #f8f8f8;
+}
+
+.dropdown-content a > p:nth-child(2) {
+  font-size: 80%;
+  align-self: center;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-color: #F8F8F8;
+  font-weight: 600;
+  color: #444444;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #edf2ff;
+  color: #1d4ed8;
+}
+.dropdown-content a:hover > p:nth-child(2) {
+  background-color: #D1DDFF;
+  color: #1d4ed8;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ------------------------- */
+
+.top-right-right {
+  height: 2.5rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-icon {
+  height: 100%;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.8rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: var(--defaultShadow);
+  cursor: pointer;
+}
+
+.top-right-option {
+  display: flex;
+  height: 2.5rem;
+  margin: 0 0 0 0.8rem;
+  border-radius: 5px;
+}
+.top-right-option span {
+  height: 100%;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 1px;
+  background-color: #1d4ed8;
+  color: #fff;
+  font-size: 85%;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  cursor: pointer;
+}
+.top-right-option i {
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d4ed8;
+  color: #fff;
+  font-size: 85%;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  cursor: pointer;
+}
+
+.bottom {
+  flex-grow: 1;
+  display: flex;
+}
+
+.bottom-left {
+  width: 28rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.search {
+  width: 100%;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin-bottom: 1rem;
+}
+
+.search i,
+.search span {
+  height: 100%;
+  width: 2.7rem;
+  color: #b0b0b0;
+}
+
+.search span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70%;
+}
+.search i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search span i {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 40%;
+  height: 40%;
+}
+
+.search input {
+  flex-grow: 1;
+  height: 100%;
+  outline: none;
+  border: none;
+}
+
+/* -------bottom-right-------- */
+.bottom-right {
+  flex-grow: 1;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+}
+.bottom-right-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 12px;
+  box-shadow: var(--defaultShadow);
+  border-radius: 5px;
+}
+
+.candidates-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.info-left {
+  display: flex;
+}
+.info-left input {
+  margin-right: 2rem;
+}
+.info-left p,
+.info-right > p:first-of-type {
+  align-self: center;
+  color: #1d4ed8;
+  font-size: 95%;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.info-right {
+  display: flex;
+  align-items: center;
+}
+
+.info-right hr {
+  height: 10px;
+  border: none;
+  border-right: 2px solid #f3f3f4;
+}
+
+.info-tally {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-tally p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-tally > p:nth-child(2) {
+  width: 25px;
+  height: 25px;
+  margin-left: 12px;
+  border-radius: 50%;
+  font-size: 80%;
+  color: #22215b;
+  background-color: #f7f8fd;
+}

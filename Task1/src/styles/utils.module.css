@@ -1,0 +1,275 @@
+/* --------Global dialoge box css------- */
+
+.common-div {
+  margin-bottom: 2.5rem;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-default {
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-text-form {
+  width: 100%;
+  height: 2.8rem;
+  margin: 5px 0;
+  padding-bottom: 12px;
+  border: none;
+  border-bottom: 1.2px solid rgb(170, 170, 170);
+  outline: none;
+  color: black;
+  /* font-weight: bold; */
+  font-size: 90%;
+}
+
+.input-check-toggle {
+  width: 100%;
+  height: 2.8rem;
+  margin: 5px 0;
+  display: flex;
+  border-bottom: 1.2px solid rgb(170, 170, 170);
+  outline: none;
+  font-size: 90%;
+  padding-bottom: 12px;
+}
+.field-name {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  /* font-weight: bold; */
+}
+.field-name p {
+  margin-left: 4px;
+}
+
+.checkbox-span,
+.toggle-hide {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+.checkbox-span p,
+.toggle-hide p {
+  margin-left: 5px;
+}
+
+/* add question */
+.add-que {
+  display: flex;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.add-que i {
+  font-size: 120%;
+}
+.add-que p {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 75%;
+  align-self: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem 0;
+}
+
+.que-type,
+.que-des {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+
+.que-type label,
+.que-des label {
+  font-size: 80%;
+}
+
+.que-type select,
+.que-des input {
+  height: 2.7rem;
+  margin-top: 5px;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+.delete-save-option {
+  margin: 1.5rem 0 0.5rem 0;
+  padding-bottom: 1.5rem;
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-self: center;
+  border-bottom: 1.2px solid rgb(170, 170, 170);
+}
+
+.delete-save-option span {
+  display: flex;
+  color: #a80000;
+  cursor: pointer;
+}
+
+.delete-save-option span p {
+  margin-left: 10px;
+  font-size: 80%;
+  align-self: center;
+  font-weight: bold;
+}
+.delete-save-option span i {
+  align-self: center;
+  font-size: 120%;
+}
+
+.save-button {
+  width: 3.6rem;
+  height: 1.8rem;
+  border: none;
+  outline: none;
+  background-color: #087b2f;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.input-text-form::-webkit-input-placeholder {
+  color: black;
+}
+/* ----------- Upload Cover Image ------------- */
+
+.title {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px;
+  font-weight: bold;
+  background-color: #d0f7fa;
+}
+
+.cover-img {
+  width: 100%;
+  height: 17.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  height: 70%;
+  border: 1px solid;
+  border-style: dashed;
+  border-color: grey;
+  border-radius: 4px;
+}
+
+/* ----------- Personal Information ---------------- */
+
+/* switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Question Field */
+.question-field {
+  width: 100%;
+  min-height: 3rem;
+  border-bottom: 1.2px solid rgb(170, 170, 170);
+}
+.question-field > p {
+  font-size: 65%;
+}
+.question-field > span {
+  display: flex;
+  width: 100%;
+}
+.question-field > span p {
+  flex-grow: 1;
+  font-size: 95%;
+  margin: 0.5rem 0 1rem 0;
+  max-height: 2.2rem;
+  overflow: hidden;
+}
+.question-field > span i {
+  font-size: 90%;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 3.2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
