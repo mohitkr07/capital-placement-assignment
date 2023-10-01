@@ -20,6 +20,9 @@ const Home = () => {
   // Fetch Data
   const fetchApplicationForm = async () => {
     try {
+      // yaml endpoint
+      // http://127.0.0.1:4010/api/405.6457059118799/programs/laborum/application-form
+
       const response = await fetch(
         `https://e2f0497c-962a-4f8f-8a2c-b2a43f049ce3.mock.pstmn.io/capital-placement`
       );
@@ -40,6 +43,8 @@ const Home = () => {
   // Update Data
   const updateApplicationForm = async () => {
     try {
+      // yaml endpoint
+      // http://127.0.0.1:4010/api/983.6877336280635/programs/sapiente/application-form
       const response = await fetch(
         `https://e2f0497c-962a-4f8f-8a2c-b2a43f049ce3.mock.pstmn.io/capital-placement`,
         {
@@ -90,30 +95,12 @@ const Home = () => {
     await updateApplicationForm();
   };
 
-  const testModify = async () => {
-    const updatedData = { ...formData };
-
-    updatedData.data.attributes.profile.profileQuestions[0].question =
-      "What is Your name?";
-    const q = updatedData.data.attributes.profile.profileQuestions[0];
-    q.question = "How are you?";
-    updatedData.data.attributes.personalInformation.personalQuestions.push(q);
-    updatedData.data.attributes.personalInformation.personalQuestions.push(q);
-    updatedData.data.attributes.personalInformation.personalQuestions.push(q);
-    updatedData.data.attributes.personalInformation.personalQuestions.push(q);
-
-    setFormData(updatedData);
-    await updateApplicationForm();
-    await fetchApplicationForm();
-    console.log("test", formData);
-  };
-
   return (
     <div className={styles["container"]}>
       <div className={styles["side-bar"]}>
         <div className={styles["navigation"]}>
           <i className="fa-solid fa-bars"></i>
-          <i onClick={testModify} className="fa-solid fa-house"></i>
+          <i className="fa-solid fa-house"></i>
           <i className="fa-regular fa-rectangle-list"></i>
         </div>
       </div>
