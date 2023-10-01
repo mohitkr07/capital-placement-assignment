@@ -21,7 +21,7 @@ const Home = () => {
   const fetchApplicationForm = async () => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:4010/api/260.92998504742457/programs/sunt/application-form`
+        `https://e2f0497c-962a-4f8f-8a2c-b2a43f049ce3.mock.pstmn.io/capital-placement`
       );
       if (response.ok) {
         const data = await response.json();
@@ -41,7 +41,7 @@ const Home = () => {
   const updateApplicationForm = async () => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:4010/api/260.92998504742457/programs/sunt/application-form`,
+        `https://e2f0497c-962a-4f8f-8a2c-b2a43f049ce3.mock.pstmn.io/capital-placement`,
         {
           method: "PUT",
           headers: {
