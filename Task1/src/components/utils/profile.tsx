@@ -129,8 +129,7 @@ const Profile = (profile: ProfileInfo) => {
             onSwitch={() => handleSwitchChange(3)}
           />
           {questions.map(
-            (que: any, key: any) =>
-              key > 0 && <Question key={key} data={que} />
+            (que: any, key: any) => key > 0 && <Question key={key} question={que} />
           )}
           {showAddQue && (
             <>
@@ -166,9 +165,15 @@ const Profile = (profile: ProfileInfo) => {
               ) : queType == "MCQ" ? (
                 <MCQ onSave={handleOnSave} onDelete={() => setAddQue(false)} />
               ) : queType == "Video" ? (
-                <Video onSave={handleOnSave} onDelete={() => setAddQue(false)} />
+                <Video
+                  onSave={handleOnSave}
+                  onDelete={() => setAddQue(false)}
+                />
               ) : queType == "Dropdown" ? (
-                <Dropdown onSave={handleOnSave} onDelete={() => setAddQue(false)} />
+                <Dropdown
+                  onSave={handleOnSave}
+                  onDelete={() => setAddQue(false)}
+                />
               ) : (
                 <Paragraph
                   onSave={handleOnSave}

@@ -5,6 +5,7 @@ import Profile from "./utils/profile";
 import AdditionalQ from "./utils/additionalQ";
 
 import styles from "../styles/Home.module.css";
+import { abort } from "process";
 
 const Home = () => {
   const [listColor, setColor] = useState("#00635B");
@@ -66,10 +67,10 @@ const Home = () => {
   const undateFormData = async (personalInfo: any) => {
     const updatedFormData = { ...formData };
     updatedFormData.data.attributes.personalInformation = personalInfo;
-    
+
     setFormData(updatedFormData);
     await updateApplicationForm();
-    console.log(formData)
+    console.log(formData);
   };
 
   const undateFormData2 = async (profileData: any) => {
@@ -77,7 +78,7 @@ const Home = () => {
     updatedFormData.data.attributes.profile = profileData;
     setFormData(updatedFormData);
     await updateApplicationForm();
-    console.log(formData)
+    console.log(formData);
   };
 
   const updateAdditional = async (additionalData: any) => {
@@ -123,6 +124,7 @@ const Home = () => {
             <li style={{ backgroundColor: listColor, color: "#fff" }}>
               Application Form
             </li>
+            <div className={styles["selected"]}></div>
             <li>Workflow</li>
             <li>Preview</li>
           </ul>

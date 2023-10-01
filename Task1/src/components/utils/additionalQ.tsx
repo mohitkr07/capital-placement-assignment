@@ -41,7 +41,7 @@ const AdditionalQ = (additional: AdditionalQ) => {
       <div className={styles["form"]}>
         <div className={styles["form-default"]}>
           <div className={styles["question"]}>
-            {additional.additionalQuestions.map((item: any, key: any) => {
+            {questions.map((item: any, key: any) => {
               return key>0 && <Question key={key} question={item} />;
             })}
             {showAddQue && (

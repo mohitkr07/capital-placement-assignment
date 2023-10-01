@@ -6,7 +6,7 @@ interface type {
   onDelete: () => void;
 }
 
-const Dropdown = (props: type) => {
+const Dropdown = (props: type | any) => {
   const handleDeleteButtong = () => {
     props.onDelete();
   };

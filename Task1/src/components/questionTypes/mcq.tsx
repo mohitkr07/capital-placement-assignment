@@ -5,7 +5,7 @@ interface type {
   onSave: (question: any) => void;
   onDelete: () => void;
 }
-const MCQ = (props: type) => {
+const MCQ = (props: type |any) => {
   const handleDeleteButtong = () => {
     props.onDelete();
   };

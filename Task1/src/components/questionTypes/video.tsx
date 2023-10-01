@@ -6,7 +6,7 @@ interface type {
   onDelete: () => void;
 }
 
-const Video = (props: type) => {
+const Video = (props: type | any) => {
   const handleDeleteButtong = () => {
     props.onDelete();
   };

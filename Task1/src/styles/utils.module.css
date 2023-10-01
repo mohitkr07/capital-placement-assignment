@@ -273,3 +273,9 @@
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media screen and (max-width:600px) {
+  .cover-img {
+    height: 15rem;
+  }
+}

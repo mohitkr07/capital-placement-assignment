@@ -41,7 +41,12 @@ const Paragraph = (props: type) => {
           <i className="fa-solid fa-x"></i>
           <p>Delete question</p>
         </span>
-        <button onClick={()=>props.onSave(question)} className={styles["save-button"]}>Save</button>
+        <button
+          onClick={() => props.onSave(question)}
+          className={styles["save-button"]}
+        >
+          Save
+        </button>
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import styles from "../../styles/utils.module.css";
 
 
 const Question = (props: any) => {
+  
   return (
     <div className={styles["question-field"]}>
       <p>{props.question.type}</p>

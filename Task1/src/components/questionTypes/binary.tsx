@@ -6,7 +6,7 @@ interface binaryData {
   onDelete: () => void;
 }
 
-const Binary = (props: binaryData) => {
+const Binary = (props: binaryData | any) => {
   const handleDeleteButtong = () => {
     props.onDelete();
   };
